@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twenty Twenty Child\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-24 13:42+0000\n"
-"PO-Revision-Date: 2020-01-24 13:46+0000\n"
+"POT-Creation-Date: 2020-01-24 14:20+0000\n"
+"PO-Revision-Date: 2020-01-24 14:20+0000\n"
 "Last-Translator: johan <dev-email@flywheel.local>\n"
 "Language-Team: Norsk bokmål\n"
 "Language: nb_NO\n"
@@ -14,14 +14,13 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.3.1; wp-5.3.3-alpha-46995"
 
-#. URI of the theme
-#. Author URI of the theme
-msgid "http://helsekompetanse.no"
-msgstr "http://helsekompetanse.no"
+#: template-parts/entry-header.php:48
+msgid "Breadcrumb"
+msgstr "Brødsmulesti"
 
-#. Author of the theme
-msgid "Johan S. Steinberg"
-msgstr "Johan S. Steinberg"
+#: template-parts/entry-header.php:50
+msgid "Front"
+msgstr "Forside"
 
 #. Name of the theme
 msgid "Twenty Twenty Child"
@@ -30,3 +29,12 @@ msgstr "Twenty Twenty child-tema"
 #. Description of the theme
 msgid "Twenty Twenty Child Theme for learning content"
 msgstr "Twenty Twenty child-tema for læringsinnhold"
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://helsekompetanse.no"
+msgstr "http://helsekompetanse.no"
+
+#. Author of the theme
+msgid "Johan S. Steinberg"
+msgstr "Johan S. Steinberg"

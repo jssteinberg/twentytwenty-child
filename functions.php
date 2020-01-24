@@ -11,3 +11,14 @@ function theme_enqueue_styles() {
 		wp_get_theme()->get('Version')
 	);
 }
+
+/**
+  * Set up My Child Theme's textdomain.
+  *
+  * Declare textdomain for this child theme.
+  * Translations can be added to the /languages/ directory.
+  */
+function twentytwentychild_theme_setup() {
+    load_child_theme_textdomain( 'twentytwentychild', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'twentytwentychild_theme_setup' );
