@@ -1,0 +1,28 @@
+/*
+ Theme Name:   Twenty Twenty Child
+ Theme URI:    http://helsekompetanse.no
+ Description:  Twenty Twenty Child Theme for learning content
+ Author:       Johan S. Steinberg
+ Author URI:   http://helsekompetanse.no
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, left-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwentychild
+*/
+
+.breadcrumbs a:after {
+	content: '';
+	display: inline-block;
+	background: currentColor;
+	margin-top: .1em;
+	margin-left: .6em;
+	transform: rotate(22.5deg);
+
+	width: 0.15rem;
+
+	height: 1em;
+
+	position: absolute;
+}
