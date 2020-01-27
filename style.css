@@ -1,15 +1,17 @@
+@charset "UTF-8";
 /*
- Theme Name:   Twenty Twenty Child
- Theme URI:    http://helsekompetanse.no
- Description:  Twenty Twenty Child Theme for learning content
- Author:       Johan S. Steinberg
- Author URI:   http://helsekompetanse.no
- Template:     twentytwenty
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, left-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twentytwentychild
+Theme Name:          Twenty Twenty Child
+Theme URI:           http://helsekompetanse.no
+Bitbucket Theme URI: Helsekompetanse/twentytwenty-child
+Description:         Twenty Twenty Child Theme for learning content
+Author:              Johan S. Steinberg
+Author URI:          http://helsekompetanse.no
+Template:            twentytwenty
+Version:             1.0.0
+License:             GNU General Public License v2 or later
+License URI:         http://www.gnu.org/licenses/gpl-2.0.html
+Tags:                light, dark, left-sidebar, responsive-layout, accessibility-ready
+Text Domain:         twentytwentychild
 */
 
 .breadcrumbs a:after {
