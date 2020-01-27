@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Twenty Twenty Child\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-24 14:20+0000\n"
-"PO-Revision-Date: 2020-01-24 14:20+0000\n"
+"PO-Revision-Date: 2020-01-27 19:49+0000\n"
 "Last-Translator: johan <dev-email@flywheel.local>\n"
 "Language-Team: Norsk bokmål\n"
 "Language: nb_NO\n"
@@ -20,7 +20,7 @@ msgstr "Brødsmulesti"
 
 #: template-parts/entry-header.php:50
 msgid "Front"
-msgstr "Forside"
+msgstr "Forsiden"
 
 #. Name of the theme
 msgid "Twenty Twenty Child"

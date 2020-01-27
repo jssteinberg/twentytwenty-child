@@ -45,7 +45,7 @@ if ( is_singular() ) {
 			?>
 
 			<nav class="entry-categories breadcrumbs">
-				<span class="screen-reader-text"><?php _e( 'Breadcrumb', 'twentytwentychild' ); ?></span>
+				<span class="screen-reader-text"><?php _e( 'Breadcrumb (parent pages)', 'twentytwentychild' ); ?></span>
 				<div class="entry-categories-inner">
 					<a href="/"><?php _e('Front', 'twentytwentychild'); ?></a> <?php foreach ( array_reverse(get_ancestors( get_the_ID(), 'page' )) as $ancestor ) { ?> <a href="<?php echo esc_url(get_page_link($ancestor)); ?>"><?php echo get_the_title($ancestor); ?></a> <?php } ?>
 				</div><!-- .entry-categories-inner -->
