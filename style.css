@@ -14,38 +14,83 @@ Tags:                light, dark, left-sidebar, responsive-layout, accessibility
 Text Domain:         twentytwentychild
 */
 
+figcaption,
+.wp-caption-text {
+	text-align: center;
+}
 
-.book-menu {
+/*
+ * Left menu
+ */
+
+main .left-menu {
+	display: none;
+}
+.left-menu.wp-block-cover {
 	height: unset !important;
 	min-height: unset !important;
 	padding-top: 2rem;
 }
-.book-menu ul,
-.book-menu p {
+main .left-menu ul,
+.left-menu.wp-block-cover p {
 	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 }
-.book-menu ul {
+main .left-menu ul {
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 1.2;
 	list-style: none;
 	margin-left: 0;
 }
-.book-menu li {
+.left-menu.from-template ul.level-1 > li > ul,
+main .left-menu li {
 	margin-left: 0;
 }
-.book-menu ul > li > ul {
+main .left-menu ul > li > ul {
 	margin-left: 1em;
 }
-.book-menu a[aria-current="page"] {
-	color: black;
+.left-menu a {
 	text-decoration: none;
 }
-
-figcaption,
-.wp-caption-text {
-	text-align: center;
+.left-menu a:focus,
+.left-menu a:hover {
+	text-decoration: underline;
 }
+main .left-menu a[aria-current="page"] {
+	color: black;
+}
+.left-menu.from-template ul.level-1 > li:not([class*="current_page_"]) {
+	display: none;
+}
+.left-menu.from-template ul.level-1 > li[class*="current_page_"] {
+	font-size: 2.1rem;
+}
+@media (min-width: 1000px) {
+	main .left-menu:not([class*="has-background"]) {
+		border-right: .15rem solid;
+	}
+	main .left-menu {
+		display: block;
+		float: left;
+		margin-left: 2rem;
+		margin-right: 3rem;
+		margin-bottom: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		width: unset;
+		max-width: max-content !important;
+	}
+	.left-menu[class*="has-background"] {
+		margin-left: 4rem;
+	}
+	.left-menu[class*="has-background"]:not(.wp-block-cover) {
+		padding: 4rem 3rem;
+	}
+}
+
+/*
+ * Breadcrumbs
+ */
 
 .breadcrumbs a:after {
 	content: '';
@@ -61,6 +106,10 @@ figcaption,
 
 	position: absolute;
 }
+
+/*
+ * Framework classes
+ */
 
 .d-flex {
 	display: flex;
