@@ -29,7 +29,7 @@
 
 		<?php if ( is_page_template( 'templates/template-left-menu.php' ) && is_singular() ) { ?>
 
-			<aside class="left-menu from-template has-subtle-background-background-color has-background-dim">
+			<aside class="left-menu-wrapper from-template">
 				<nav aria-label="<?php esc_attr_e( 'Local', 'twentytwentychild' ); ?>" role="navigation">
 
 					<ul class="reset-list-style level-1">

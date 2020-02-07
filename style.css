@@ -23,68 +23,63 @@ figcaption,
  * Left menu
  */
 
-main .left-menu {
+main .left-menu-wrapper {
 	display: none;
+	position: relative;
+	z-index: 1;
 }
-.left-menu.wp-block-cover {
+.left-menu-wrapper.wp-block-cover {
 	height: unset !important;
 	min-height: unset !important;
 	padding-top: 2rem;
 }
-main .left-menu ul,
-.left-menu.wp-block-cover p {
+main .left-menu-wrapper ul,
+.left-menu-wrapper.wp-block-cover p {
 	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 }
-main .left-menu ul {
+main .left-menu-wrapper ul {
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 1.2;
 	list-style: none;
 	margin-left: 0;
 }
-.left-menu.from-template ul.level-1 > li > ul,
-main .left-menu li {
+.left-menu-wrapper.from-template ul.level-1 > li > ul,
+main .left-menu-wrapper li {
 	margin-left: 0;
 }
-main .left-menu ul > li > ul {
+main .left-menu-wrapper ul > li > ul {
 	margin-left: 1em;
 }
-.left-menu a {
+.left-menu-wrapper a {
 	text-decoration: none;
 }
-.left-menu a:focus,
-.left-menu a:hover {
+.left-menu-wrapper a:focus,
+.left-menu-wrapper a:hover {
 	text-decoration: underline;
 }
-main .left-menu a[aria-current="page"] {
+main .left-menu-wrapper a[aria-current="page"] {
 	color: black;
 }
-.left-menu.from-template ul.level-1 > li:not([class*="current_page_"]) {
+.left-menu-wrapper.from-template ul.level-1 > li:not([class*="current_page_"]) {
 	display: none;
 }
-.left-menu.from-template ul.level-1 > li[class*="current_page_"] {
+.left-menu-wrapper.from-template ul.level-1 > li[class*="current_page_"] {
 	font-size: 2.1rem;
 }
 @media (min-width: 1000px) {
-	main .left-menu:not([class*="has-background"]) {
-		border-right: .15rem solid;
-	}
-	main .left-menu {
+	main .left-menu-wrapper {
 		display: block;
-		float: left;
-		margin-left: 2rem;
-		margin-right: 3rem;
-		margin-bottom: 2rem;
-		padding-left: 2rem;
-		padding-right: 2rem;
+		max-width: 176rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	main .left-menu-wrapper ul.level-1 {
 		width: unset;
-		max-width: max-content !important;
-	}
-	.left-menu[class*="has-background"] {
-		margin-left: 4rem;
-	}
-	.left-menu[class*="has-background"]:not(.wp-block-cover) {
-		padding: 4rem 3rem;
+		max-width: 16vw !important;
+
+		position: absolute;
+		left: 4rem;
 	}
 }
 
