@@ -22,10 +22,11 @@ figcaption,
 /*
  * Site header
  */
+
 .site-logo {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
 
@@ -44,6 +45,25 @@ figcaption,
 .site-logo a:hover,
 .site-logo a:focus {
 	text-decoration: underline;
+}
+
+/*
+ * Hidden entry header template
+ */
+
+.template-hidden-entry-header.singular .entry-header {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
 }
 
 /*
