@@ -7,7 +7,7 @@ Description:         Twenty Twenty Child Theme for learning content
 Author:              Johan S. Steinberg
 Author URI:          http://helsekompetanse.no
 Template:            twentytwenty
-Version:             1.0.2
+Version:             1.0.3
 License:             GNU General Public License v2 or later
 License URI:         http://www.gnu.org/licenses/gpl-2.0.html
 Tags:                light, dark, left-sidebar, responsive-layout, accessibility-ready
@@ -17,6 +17,33 @@ Text Domain:         twentytwentychild
 figcaption,
 .wp-caption-text {
 	text-align: center;
+}
+
+/*
+ * Site header
+ */
+.site-logo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1;
+}
+.site-logo > :first-child {
+	padding-right: .5em;
+}
+.site-logo a {
+	color: inherit;
+	text-decoration: none;
+}
+.site-logo:hover a,
+.site-logo a:hover,
+.site-logo a:focus {
+	text-decoration: underline;
 }
 
 /*
