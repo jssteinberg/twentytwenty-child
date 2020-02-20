@@ -19,6 +19,10 @@ figcaption,
 	text-align: center;
 }
 
+.entry-content .wp-block-group.alignwide > [class*="__inner-container"] > * {
+	max-width: 100% !important;
+}
+
 /*
  * Site header
  */
