@@ -7,7 +7,7 @@ Description:         Twenty Twenty Child Theme for learning content
 Author:              Johan S. Steinberg
 Author URI:          http://helsekompetanse.no
 Template:            twentytwenty
-Version:             1.0.5
+Version:             1.0.6
 License:             GNU General Public License v2 or later
 License URI:         http://www.gnu.org/licenses/gpl-2.0.html
 Tags:                light, dark, left-sidebar, responsive-layout, accessibility-ready
@@ -35,7 +35,7 @@ figcaption,
 	line-height: 1;
 }
 .site-logo > :first-child {
-	padding-right: .5em;
+	padding-right: .25em;
 }
 .site-logo a {
 	color: inherit;
@@ -153,6 +153,10 @@ main .left-menu-wrapper a[aria-current="page"] {
  * Framework classes
  */
 
+/* Display classes */
+.d-block {
+	display: block;
+}
 .d-flex {
 	display: flex;
 	flex-direction: row;
@@ -160,7 +164,24 @@ main .left-menu-wrapper a[aria-current="page"] {
 	justify-content: flex-start;
 	align-items: flex-start;
 }
+.flex-wrap { flex-wrap: wrap; }
 
+/* Font classes */
+.font-sans {
+	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+}
+.font-weight-300 { font-weight: 300; }
+.font-weight-400 { font-weight: 400; }
+.font-weight-500 { font-weight: 500; }
+.font-weight-600 { font-weight: 600; }
+.font-weight-700 { font-weight: 700; }
+.font-weight-800 { font-weight: 800; }
+.font-weight-900 { font-weight: 900; }
+
+/* Width and height */
+.w-100 { width: 100%; }
+
+/* Margins and paddings */
 .m-0  { margin:        0      !important; }
 .m-1  { margin:        .25rem !important; }
 .m-2  { margin:        .5rem  !important; }
