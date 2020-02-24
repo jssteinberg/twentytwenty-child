@@ -142,7 +142,10 @@ main .left-menu-wrapper a[aria-current="page"] {
  * Breadcrumbs
  */
 
-.breadcrumbs a:after {
+.breadcrumbs.entry-categories a {
+    margin-left: 2rem;
+}
+.breadcrumbs.entry-categories a:after {
 	content: '';
 	display: inline-block;
 	background: currentColor;
