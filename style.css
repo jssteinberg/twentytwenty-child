@@ -14,6 +14,12 @@ Tags:                light, dark, left-sidebar, responsive-layout, accessibility
 Text Domain:         twentytwentychild
 */
 
+/* Fix hover text color */
+.has-text-color a:hover {
+	color: inherit;
+}
+
+/* Center caption text */
 figcaption,
 .wp-caption-text {
 	text-align: center;
@@ -142,6 +148,10 @@ main .left-menu-wrapper a[aria-current="page"] {
  * Breadcrumbs
  */
 
+.breadcrumbs.entry-categories {
+	position: relative;
+	left: -1rem;
+}
 .breadcrumbs.entry-categories a {
     margin-left: 2rem;
 }
@@ -154,7 +164,6 @@ main .left-menu-wrapper a[aria-current="page"] {
 	transform: rotate(22.5deg);
 
 	width: 0.15rem;
-
 	height: 1em;
 
 	position: absolute;
