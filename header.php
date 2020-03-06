@@ -38,6 +38,17 @@
 
 	<body <?php body_class( $class ); ?>>
 
+
+		<?php if ( has_nav_menu( 'lang' ) ) {
+			wp_nav_menu(
+				array(
+					'container'  => '',
+					'items_wrap' => '%3$s',
+					'theme_location' => 'lang',
+				)
+			);
+		} ?>
+
 		<?php
 		wp_body_open();
 		?>

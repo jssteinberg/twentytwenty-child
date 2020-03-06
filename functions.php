@@ -89,3 +89,17 @@ function twentytwentychild_site_logo( $args = array(), $echo = true ) {
 	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
+
+/**
+ * Register navigation menus uses wp_nav_menu in five places.
+ */
+function twentytwentychild_menus() {
+
+	$locations = array(
+		'lang'  => __( 'Other Languages Menu', 'twentytwentychild' ),
+	);
+
+	register_nav_menus( $locations );
+}
+
+add_action( 'init', 'twentytwentychild_menus' );
