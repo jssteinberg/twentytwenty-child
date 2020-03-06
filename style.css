@@ -33,7 +33,6 @@ figcaption,
 /*
  * Site header
  */
-
 #site-header {
 	z-index: 2;
 }
@@ -187,6 +186,7 @@ main .left-menu-wrapper a[aria-current="page"] {
 .flex-wrap { flex-wrap: wrap; }
 
 /* Font classes */
+.entry-content .font-sans,
 .font-sans {
 	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 }
