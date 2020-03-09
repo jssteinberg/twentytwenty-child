@@ -39,15 +39,20 @@
 	<body <?php body_class( $class ); ?>>
 
 
-		<?php if ( has_nav_menu( 'lang' ) ) {
-			wp_nav_menu(
-				array(
-					'container'  => '',
-					'items_wrap' => '%3$s',
-					'theme_location' => 'lang',
-				)
-			);
-		} ?>
+		<?php if ( has_nav_menu( 'lang' ) ) { ?>
+			<ul class="lang-menu reset-list-style">
+				<?php
+				wp_nav_menu(
+					array(
+						'container'  => '',
+						'items_wrap' => '%3$s',
+						'theme_location' => 'lang',
+						'depth' => 1,
+					)
+				);
+				?>
+			</ul>
+		<?php } ?>
 
 		<?php
 		wp_body_open();

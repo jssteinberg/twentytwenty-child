@@ -31,6 +31,29 @@ figcaption,
 }
 
 /*
+ * Lang menu
+ */
+.lang-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+
+	font-size: 0.842em;
+	padding: 0 1rem;
+}
+.lang-menu a {
+	font-weight: 500;
+	letter-spacing: -0.0277em;
+	padding: 0 1rem;
+	text-decoration: none;
+}
+@media (min-width: 700px) {
+	.lang-menu {
+		padding: 0 3rem;
+	}
+}
+
+/*
  * Site header
  */
 #site-header {
