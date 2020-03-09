@@ -19,6 +19,17 @@ Text Domain:         twentytwentychild
 	color: inherit;
 }
 
+/* Fix accessibility for sub menu on backgrounds of same color */
+.primary-menu .sub-menu {
+	box-shadow: 0 1rem 1rem rgba(0,0,0,.25);
+}
+
+/* Fix left/right aligned cover block height */
+.wp-block-cover.alignleft, .wp-block-cover-image.alignleft,
+.wp-block-cover.alignright, .wp-block-cover-image.alignright {
+	height: unset;
+}
+
 /* Center caption text */
 figcaption,
 .wp-caption-text {
@@ -213,6 +224,7 @@ main .left-menu-wrapper a[aria-current="page"] {
 .flex-wrap { flex-wrap: wrap; }
 
 /* Font classes */
+.widget_text .font-sans,
 .entry-content .font-sans,
 .font-sans {
 	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
