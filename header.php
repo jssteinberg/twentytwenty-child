@@ -40,6 +40,7 @@
 
 
 		<?php if ( has_nav_menu( 'lang' ) ) { ?>
+			<p class="screen-reader-text"><?php _e('Other languages', 'twentytwentychild'); ?>:</p>
 			<ul class="lang-menu reset-list-style">
 				<?php
 				wp_nav_menu(

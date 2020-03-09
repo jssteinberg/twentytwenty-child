@@ -47,6 +47,10 @@ figcaption,
 	padding: 0 1rem;
 	text-decoration: none;
 }
+.lang-menu a:hover,
+.lang-menu a:focus {
+	text-decoration: underline;
+}
 @media (min-width: 700px) {
 	.lang-menu {
 		padding: 0 3rem;
