@@ -44,6 +44,11 @@ figcaption,
 /*
  * Lang menu
  */
+.lang-menu-wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 168rem;
+}
 .lang-menu {
 	display: flex;
 	flex-wrap: wrap;

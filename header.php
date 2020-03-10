@@ -38,26 +38,27 @@
 
 	<body <?php body_class( $class ); ?>>
 
-
-		<?php if ( has_nav_menu( 'lang' ) ) { ?>
-			<p class="screen-reader-text"><?php _e('Other languages', 'twentytwentychild'); ?>:</p>
-			<ul class="lang-menu reset-list-style">
-				<?php
-				wp_nav_menu(
-					array(
-						'container'  => '',
-						'items_wrap' => '%3$s',
-						'theme_location' => 'lang',
-						'depth' => 1,
-					)
-				);
-				?>
-			</ul>
-		<?php } ?>
-
 		<?php
 		wp_body_open();
 		?>
+
+
+		<?php if ( has_nav_menu( 'lang' ) ) { ?>
+			<div class="lang-menu-wrapper">
+				<p class="screen-reader-text"><?php _e('Other languages', 'twentytwentychild'); ?>:</p>
+
+				<ul class="lang-menu reset-list-style">
+					<?php wp_nav_menu(
+						array(
+							'container'	=> '',
+							'items_wrap' => '%3$s',
+							'theme_location' => 'lang',
+							'depth' => 1,
+						)
+					); ?>
+				</ul>
+			</div>
+		<?php } ?>
 
 		<header id="site-header" class="header-footer-group" role="banner">
 
